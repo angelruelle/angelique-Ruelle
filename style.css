@@ -249,9 +249,14 @@ font-size:1.05rem;
 
 .logo img{
 
-    height:95px;
+   .logo img{
+
+    height:90px;
+
+    border-radius:12px;
 
 }
+
 
 .navbar ul{
 
