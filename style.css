@@ -825,3 +825,54 @@ section:nth-child(even){
     }
 
 }
+/* ==========================================
+   ANIMATIONS
+========================================== */
+
+.navbar-scroll{
+
+    position:fixed;
+
+    background:rgba(255,255,255,.95);
+
+    backdrop-filter:blur(12px);
+
+    box-shadow:0 8px 30px rgba(0,0,0,.08);
+
+    animation:menu .3s;
+
+}
+
+@keyframes menu{
+
+    from{
+
+        transform:translateY(-100%);
+
+    }
+
+    to{
+
+        transform:translateY(0);
+
+    }
+
+}
+
+.hidden{
+
+    opacity:0;
+
+    transform:translateY(40px);
+
+    transition:1s;
+
+}
+
+.show{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
