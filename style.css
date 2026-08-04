@@ -363,3 +363,465 @@ h3{
     margin-top:40px;
 
 }
+/* ==========================================================
+   SECTIONS
+========================================================== */
+
+section{
+
+    padding:110px 0;
+
+}
+
+section:nth-child(even){
+
+    background:var(--blanc-pur);
+
+}
+
+/* ==========================================================
+   PEUT-ÊTRE TRAVERSEZ-VOUS...
+========================================================== */
+
+.cards{
+
+    margin-top:60px;
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+
+    gap:30px;
+
+}
+
+.card{
+
+    background:white;
+
+    border-radius:var(--radius);
+
+    padding:40px 30px;
+
+    box-shadow:var(--ombre);
+
+    transition:.35s;
+
+    border:1px solid rgba(0,0,0,.05);
+
+}
+
+.card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.card .icon{
+
+    font-size:2rem;
+
+    margin-bottom:20px;
+
+}
+
+.card h3{
+
+    margin-bottom:15px;
+
+}
+
+.card p{
+
+    color:var(--gris);
+
+}
+
+/* ==========================================================
+   A PROPOS
+========================================================== */
+
+.about{
+
+    background:var(--beige);
+
+}
+
+.about-grid{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:80px;
+
+    align-items:center;
+
+}
+
+.about-image img{
+
+    border-radius:30px;
+
+    box-shadow:var(--ombre);
+
+}
+
+.about-content p{
+
+    margin-bottom:22px;
+
+    color:var(--gris);
+
+    font-size:1.08rem;
+
+}
+
+/* ==========================================================
+   GALERIE CABINET
+========================================================== */
+
+.gallery{
+
+    margin-top:60px;
+
+    display:grid;
+
+    grid-template-columns:2fr 1fr 1fr;
+
+    grid-auto-rows:260px;
+
+    gap:20px;
+
+}
+
+.gallery-item{
+
+    overflow:hidden;
+
+    border-radius:24px;
+
+    box-shadow:var(--ombre);
+
+}
+
+.gallery-item.large{
+
+    grid-row:span 2;
+
+}
+
+.gallery img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    transition:.5s;
+
+}
+
+.gallery img:hover{
+
+    transform:scale(1.05);
+
+}
+/* ==========================================================
+   MON ACCOMPAGNEMENT
+========================================================== */
+
+.accompagnement{
+
+    background:var(--blanc);
+
+}
+
+.steps{
+
+    margin-top:60px;
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:35px;
+
+}
+
+.step{
+
+    background:white;
+
+    padding:40px;
+
+    border-radius:24px;
+
+    box-shadow:var(--ombre);
+
+    position:relative;
+
+    transition:.35s;
+
+}
+
+.step:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.number{
+
+    width:60px;
+
+    height:60px;
+
+    border-radius:50%;
+
+    background:var(--vert);
+
+    color:white;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-weight:700;
+
+    margin-bottom:25px;
+
+}
+
+.step p{
+
+    color:var(--gris);
+
+    margin-top:15px;
+
+}
+
+/* ==========================================================
+   TEMOIGNAGES
+========================================================== */
+
+.testimonials{
+
+    background:var(--beige);
+
+}
+
+.testimonial-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+    margin-top:60px;
+
+}
+
+.testimonial{
+
+    background:white;
+
+    padding:35px;
+
+    border-radius:24px;
+
+    box-shadow:var(--ombre);
+
+}
+
+.quote{
+
+    font-size:3rem;
+
+    color:var(--terracotta);
+
+    line-height:1;
+
+}
+
+.author{
+
+    margin-top:25px;
+
+    color:var(--terracotta);
+
+    font-weight:600;
+
+}
+
+/* ==========================================================
+   CONTACT
+========================================================== */
+
+.contact-section{
+
+    background:linear-gradient(180deg,#FAF8F4,#F3EFE8);
+
+}
+
+.contact-grid{
+
+    display:grid;
+
+    grid-template-columns:1.2fr 1fr;
+
+    gap:70px;
+
+    align-items:center;
+
+}
+
+.contact-info{
+
+    margin:40px 0;
+
+}
+
+.info{
+
+    margin-bottom:25px;
+
+}
+
+.info h3{
+
+    margin-bottom:8px;
+
+}
+
+.info p{
+
+    color:var(--gris);
+
+}
+
+.contact-image img{
+
+    border-radius:30px;
+
+    box-shadow:var(--ombre);
+
+}
+
+/* ==========================================================
+   FOOTER
+========================================================== */
+
+.footer{
+
+    background:#F2ECE3;
+
+    text-align:center;
+
+    padding:60px 20px;
+
+}
+
+.footer-logo{
+
+    width:110px;
+
+    margin:0 auto 20px;
+
+}
+
+.footer p{
+
+    color:var(--gris);
+
+    margin:8px 0;
+
+}
+
+/* ==========================================================
+   RESPONSIVE
+========================================================== */
+
+@media(max-width:992px){
+
+    .about-grid,
+    .contact-grid,
+    .steps,
+    .testimonial-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .gallery{
+
+        grid-template-columns:1fr;
+
+        grid-auto-rows:260px;
+
+    }
+
+    .gallery-item.large{
+
+        grid-row:auto;
+
+    }
+
+    .navbar{
+
+        flex-direction:column;
+
+        gap:20px;
+
+    }
+
+    .navbar ul{
+
+        flex-wrap:wrap;
+
+        justify-content:center;
+
+        gap:18px;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    section{
+
+        padding:80px 0;
+
+    }
+
+    h1{
+
+        font-size:2.8rem;
+
+    }
+
+    h2{
+
+        font-size:2.2rem;
+
+    }
+
+    .hero-buttons{
+
+        flex-direction:column;
+
+    }
+
+    .btn-principal,
+    .btn-secondaire{
+
+        width:100%;
+
+    }
+
+}
