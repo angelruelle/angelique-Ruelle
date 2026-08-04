@@ -1,48 +1,35 @@
-/* ==========================================================
-   ANGÉLIQUE RUELLE
-   STYLE V2
-========================================================== */
+/*==================================================
+ANGELIQUE RUELLE - STYLE V2
+==================================================*/
 
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Source+Sans+3:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Source+Sans+3:wght@300;400;500;600&display=swap');
 
-/* ==========================================================
-   VARIABLES
-========================================================== */
+/*=========================
+COULEURS
+=========================*/
 
 :root{
 
-    --blanc:#FAF8F4;
-
-    --blanc-pur:#FFFFFF;
-
+    --fond:#F8F6F2;
+    --blanc:#FFFFFF;
     --vert:#A7B69C;
+    --vert-fonce:#7B8D72;
+    --terracotta:#BE8B78;
+    --texte:#444444;
+    --gris:#7A7A7A;
 
-    --vert-fonce:#7C8E73;
-
-    --terracotta:#C98E7A;
-
-    --beige:#ECE5DC;
-
-    --texte:#4B4743;
-
-    --gris:#7E7872;
-
-    --ombre:0 20px 40px rgba(0,0,0,.08);
-
-    --radius:22px;
+    --ombre:0 10px 35px rgba(0,0,0,.08);
 
 }
 
-/* ==========================================================
-   RESET
-========================================================== */
+/*=========================
+RESET
+=========================*/
 
 *{
 
     margin:0;
-
     padding:0;
-
     box-sizing:border-box;
 
 }
@@ -55,22 +42,16 @@ html{
 
 body{
 
-    font-family:'Source Sans 3',sans-serif;
-
-    background:var(--blanc);
-
+    background:var(--fond);
     color:var(--texte);
-
+    font-family:'Source Sans 3',sans-serif;
     line-height:1.8;
-
-    overflow-x:hidden;
 
 }
 
 img{
 
     max-width:100%;
-
     display:block;
 
 }
@@ -78,54 +59,41 @@ img{
 a{
 
     text-decoration:none;
-
     color:inherit;
 
 }
 
 .container{
 
-    width:min(1200px,92%);
-
+    width:92%;
+    max-width:1200px;
     margin:auto;
 
 }
 
-/* ==========================================================
-   TITRES
-========================================================== */
+/*=========================
+TITRES
+=========================*/
 
-h1,
-h2,
-h3{
+h1,h2,h3{
 
     font-family:'Cormorant Garamond',serif;
-
     font-weight:600;
-
-    color:var(--texte);
 
 }
 
 h1{
 
-    font-size:clamp(3rem,6vw,8rem);
-
+    font-size:clamp(3rem,6vw,5rem);
     line-height:1.1;
+    margin-bottom:30px;
 
 }
 
 h2{
 
-    font-size:clamp(2.2rem,4vw,3.5rem);
-
+    font-size:clamp(2.2rem,4vw,3.2rem);
     margin-bottom:20px;
-
-}
-
-h3{
-
-    font-size:1.5rem;
 
 }
 
@@ -135,107 +103,41 @@ h3{
 
     color:var(--terracotta);
 
-    letter-spacing:2px;
-
     text-transform:uppercase;
 
-    font-size:.85rem;
+    letter-spacing:3px;
 
-    margin-bottom:18px;
+    font-size:.9rem;
+
+    margin-bottom:15px;
 
 }
 
 .section-intro{
 
-    max-width:720px;
+    max-width:700px;
 
     margin:auto;
 
     color:var(--gris);
 
-    font-size:1.15rem;
-
 }
 
-/* ==========================================================
-   BOUTONS
-========================================================== */
-
-.btn-principal{
-
-    letter-spacing:.5px;
-font-size:1.05rem;
-   display:inline-flex;
-
-    align-items:center;
-
-    justify-content:center;
-
-    padding:16px 34px;
-
-    border-radius:999px;
-
-    background:var(--vert);
-
-    color:white;
-
-    transition:.35s;
-
-    font-weight:600;
-
-    box-shadow:var(--ombre);
-
-}
-
-.btn-principal:hover{
-
-    background:var(--vert-fonce);
-
-    transform:translateY(-3px);
-
-}
-
-.btn-secondaire{
-
-    display:inline-flex;
-
-    align-items:center;
-
-    justify-content:center;
-
-    padding:16px 34px;
-
-    border-radius:999px;
-
-    border:1px solid rgba(0,0,0,.08);
-
-    background:white;
-
-    transition:.35s;
-
-}
-
-.btn-secondaire:hover{
-
-    background:var(--blanc);
-
-}
-
-/* ==========================================================
-   NAVIGATION
-========================================================== */
+/*=========================
+NAVIGATION
+=========================*/
 
 .navbar{
 
     position:absolute;
 
-    left:0;
+    top:0;
 
-    top:20;
+    left:0;
 
     width:100%;
 
-    padding:28px 5%;
+    padding:25px 5%;
 
     display:flex;
 
@@ -243,28 +145,23 @@ font-size:1.05rem;
 
     align-items:center;
 
-    z-index:100;
+    z-index:1000;
 
 }
 
 .logo img{
 
-   .logo img{
-
-    height:90px;
-
-    border-radius:12px;
+    height:75px;
 
 }
 
-
 .navbar ul{
+
+    list-style:none;
 
     display:flex;
 
-    gap:34px;
-
-    list-style:none;
+    gap:30px;
 
 }
 
@@ -288,23 +185,29 @@ font-size:1.05rem;
 
 .btn-rdv{
 
-    padding:14px 28px;
-
-    border-radius:999px;
-
     background:var(--vert);
 
     color:white;
 
+    padding:14px 28px;
+
+    border-radius:40px;
+
+    transition:.3s;
+
 }
 
-/* ==========================================================
-   HERO
-========================================================== */
+.btn-rdv:hover{
+
+    background:var(--vert-fonce);
+
+}
+
+/*=========================
+HERO
+=========================*/
 
 .hero{
-
-    position:relative;
 
     min-height:100vh;
 
@@ -314,10 +217,17 @@ font-size:1.05rem;
 
     justify-content:center;
 
-   background:
-linear-gradient(rgba(250,248,244,.30),
-rgba(250,248,244,.45))
-url(héros.png);
+    background:
+
+    linear-gradient(
+
+    rgba(248,246,242,.35),
+
+    rgba(248,246,242,.45)
+
+    ),
+
+    url("héros.png");
 
     background-size:cover;
 
@@ -327,34 +237,35 @@ url(héros.png);
 
 .hero-content{
 
-    text-align:center;
+    width:min(850px,90%);
 
-    width:min(900px,90%);
+    text-align:center;
 
     padding-top:120px;
 
 }
+
 .subtitle{
-
-    text-transform:uppercase;
-
-    letter-spacing:4px;
 
     color:var(--terracotta);
 
-    margin-bottom:22px;
+    letter-spacing:4px;
+
+    text-transform:uppercase;
+
+    margin-bottom:25px;
 
 }
 
 .hero p{
 
-    max-width:760px;
+    max-width:700px;
 
     margin:30px auto;
 
-    font-size:1.2rem;
+    color:var(--texte);
 
-    color:var(--gris);
+    font-size:1.15rem;
 
 }
 
@@ -364,523 +275,57 @@ url(héros.png);
 
     justify-content:center;
 
-    gap:18px;
+    gap:20px;
 
     flex-wrap:wrap;
 
     margin-top:40px;
 
 }
-/* ==========================================================
-   SECTIONS
-========================================================== */
 
-section{
+/*=========================
+BOUTONS
+=========================*/
 
-    padding:110px 0;
-
-}
-
-section:nth-child(even){
-
-    background:var(--blanc-pur);
-
-}
-
-/* ==========================================================
-   PEUT-ÊTRE TRAVERSEZ-VOUS...
-========================================================== */
-
-.cards{
-
-    margin-top:60px;
-
-    display:grid;
-
-    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-
-    gap:30px;
-
-}
-
-.card{
-
-    background:white;
-
-    border-radius:var(--radius);
-
-    padding:40px 30px;
-
-    box-shadow:var(--ombre);
-
-    transition:.35s;
-
-    border:1px solid rgba(0,0,0,.05);
-
-}
-
-.card:hover{
-
-    transform:translateY(-8px);
-
-}
-
-.card .icon{
-
-    font-size:2rem;
-
-    margin-bottom:20px;
-
-}
-
-.card h3{
-
-    margin-bottom:15px;
-
-}
-
-.card p{
-
-    color:var(--gris);
-
-}
-
-/* ==========================================================
-   A PROPOS
-========================================================== */
-
-.about{
-
-    background:var(--beige);
-
-}
-
-.about-grid{
-
-    display:grid;
-
-    grid-template-columns:1fr 1fr;
-
-    gap:80px;
-
-    align-items:center;
-
-}
-
-.about-image img{
-
-    border-radius:30px;
-
-    box-shadow:var(--ombre);
-
-}
-
-.about-content p{
-
-    margin-bottom:22px;
-
-    color:var(--gris);
-
-    font-size:1.08rem;
-
-}
-
-/* ==========================================================
-   GALERIE CABINET
-========================================================== */
-
-.gallery{
-
-    margin-top:60px;
-
-    display:grid;
-
-    grid-template-columns:2fr 1fr 1fr;
-
-    grid-auto-rows:260px;
-
-    gap:20px;
-
-}
-
-.gallery-item{
-
-    overflow:hidden;
-
-    border-radius:24px;
-
-    box-shadow:var(--ombre);
-
-}
-
-.gallery-item.large{
-
-    grid-row:span 2;
-
-}
-
-.gallery img{
-
-    width:100%;
-
-    height:100%;
-
-    object-fit:cover;
-
-    transition:.5s;
-
-}
-
-.gallery img:hover{
-
-    transform:scale(1.05);
-
-}
-/* ==========================================================
-   MON ACCOMPAGNEMENT
-========================================================== */
-
-.accompagnement{
-
-    background:var(--blanc);
-
-}
-
-.steps{
-
-    margin-top:60px;
-
-    display:grid;
-
-    grid-template-columns:repeat(2,1fr);
-
-    gap:35px;
-
-}
-
-.step{
-
-    background:white;
-
-    padding:40px;
-
-    border-radius:24px;
-
-    box-shadow:var(--ombre);
-
-    position:relative;
-
-    transition:.35s;
-
-}
-
-.step:hover{
-
-    transform:translateY(-8px);
-
-}
-
-.number{
-
-    width:60px;
-
-    height:60px;
-
-    border-radius:50%;
+.btn-principal{
 
     background:var(--vert);
 
     color:white;
 
-    display:flex;
+    padding:16px 34px;
 
-    align-items:center;
+    border-radius:40px;
 
-    justify-content:center;
+    transition:.3s;
 
-    font-weight:700;
-
-    margin-bottom:25px;
+    box-shadow:var(--ombre);
 
 }
 
-.step p{
+.btn-principal:hover{
 
-    color:var(--gris);
-
-    margin-top:15px;
+    background:var(--vert-fonce);
 
 }
 
-/* ==========================================================
-   TEMOIGNAGES
-========================================================== */
-
-.testimonials{
-
-    background:var(--beige);
-
-}
-
-.testimonial-grid{
-
-    display:grid;
-
-    grid-template-columns:repeat(3,1fr);
-
-    gap:30px;
-
-    margin-top:60px;
-
-}
-
-.testimonial{
+.btn-secondaire{
 
     background:white;
 
-    padding:35px;
+    padding:16px 34px;
 
-    border-radius:24px;
+    border-radius:40px;
 
-    box-shadow:var(--ombre);
+    border:1px solid #ddd;
 
-}
-
-.quote{
-
-    font-size:3rem;
-
-    color:var(--terracotta);
-
-    line-height:1;
+    transition:.3s;
 
 }
 
-.author{
+.btn-secondaire:hover{
 
-    margin-top:25px;
-
-    color:var(--terracotta);
-
-    font-weight:600;
+    background:#f2f2f2;
 
 }
 
-/* ==========================================================
-   CONTACT
-========================================================== */
-
-.contact-section{
-
-    background:linear-gradient(180deg,#FAF8F4,#F3EFE8);
-
-}
-
-.contact-grid{
-
-    display:grid;
-
-    grid-template-columns:1.2fr 1fr;
-
-    gap:70px;
-
-    align-items:center;
-
-}
-
-.contact-info{
-
-    margin:40px 0;
-
-}
-
-.info{
-
-    margin-bottom:25px;
-
-}
-
-.info h3{
-
-    margin-bottom:8px;
-
-}
-
-.info p{
-
-    color:var(--gris);
-
-}
-
-.contact-image img{
-
-    border-radius:30px;
-
-    box-shadow:var(--ombre);
-
-}
-
-/* ==========================================================
-   FOOTER
-========================================================== */
-
-.footer{
-
-    background:#F2ECE3;
-
-    text-align:center;
-
-    padding:60px 20px;
-
-}
-
-.footer-logo{
-
-    width:110px;
-
-    margin:0 auto 20px;
-
-}
-
-.footer p{
-
-    color:var(--gris);
-
-    margin:8px 0;
-
-}
-
-/* ==========================================================
-   RESPONSIVE
-========================================================== */
-
-@media(max-width:992px){
-
-    .about-grid,
-    .contact-grid,
-    .steps,
-    .testimonial-grid{
-
-        grid-template-columns:1fr;
-
-    }
-
-    .gallery{
-
-        grid-template-columns:1fr;
-
-        grid-auto-rows:260px;
-
-    }
-
-    .gallery-item.large{
-
-        grid-row:auto;
-
-    }
-
-    .navbar{
-
-        flex-direction:column;
-
-        gap:20px;
-
-    }
-
-    .navbar ul{
-
-        flex-wrap:wrap;
-
-        justify-content:center;
-
-        gap:18px;
-
-    }
-
-}
-
-@media(max-width:768px){
-
-    section{
-
-        padding:80px 0;
-
-    }
-
-    h1{
-
-        font-size:2.8rem;
-
-    }
-
-    h2{
-
-        font-size:2.2rem;
-
-    }
-
-    .hero-buttons{
-
-        flex-direction:column;
-
-    }
-
-    .btn-principal,
-    .btn-secondaire{
-
-        width:100%;
-
-    }
-
-}
-/* ==========================================
-   ANIMATIONS
-========================================== */
-
-.navbar-scroll{
-
-    position:fixed;
-
-    background:rgba(255,255,255,.95);
-
-    backdrop-filter:blur(12px);
-
-    box-shadow:0 8px 30px rgba(0,0,0,.08);
-
-    animation:menu .3s;
-
-}
-
-@keyframes menu{
-
-    from{
-
-        transform:translateY(-100%);
-
-    }
-
-    to{
-
-        transform:translateY(0);
-
-    }
-
-}
-
-.hidden{
-
-    opacity:0;
-
-    transform:translateY(40px);
-
-    transition:1s;
-
-}
-
-.show{
-
-    opacity:1;
-
-    transform:translateY(0);
-
-}
