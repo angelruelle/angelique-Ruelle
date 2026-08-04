@@ -335,14 +335,20 @@ url(héros.png);
 
 }
 .subtitle{
-margin-top:90px;
+
+    display:block;
+
+    text-align:center;
+
     text-transform:uppercase;
 
-    letter-spacing:4px;
+    letter-spacing:5px;
+
+    font-size:1rem;
 
     color:var(--terracotta);
 
-    margin-bottom:22px;
+    margin:40px 0 25px;
 
 }
 
