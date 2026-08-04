@@ -331,24 +331,18 @@ url(héros.png);
 
     width:min(900px,90%);
 
-    padding-top:60px;
+    padding-top:120px;
 
 }
 .subtitle{
 
-    display:block;
-
-    text-align:center;
-
     text-transform:uppercase;
 
-    letter-spacing:5px;
-
-    font-size:1rem;
+    letter-spacing:4px;
 
     color:var(--terracotta);
 
-    margin:40px 0 25px;
+    margin-bottom:22px;
 
 }
 
