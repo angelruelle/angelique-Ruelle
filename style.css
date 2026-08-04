@@ -163,7 +163,9 @@ h3{
 
 .btn-principal{
 
-    display:inline-flex;
+    letter-spacing:.5px;
+font-size:1.05rem;
+   display:inline-flex;
 
     align-items:center;
 
