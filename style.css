@@ -1,5 +1,365 @@
-body{margin:0;font-family:Arial,sans-serif;background:#FAF8F4;color:#4A4743}
-.hero{min-height:100vh;display:flex;align-items:center;justify-content:center;
-background:linear-gradient(rgba(250,248,244,.5),rgba(250,248,244,.7))}
-.box{max-width:700px;text-align:center;padding:40px}
-.btn{display:inline-block;padding:14px 28px;background:#A8B8A5;color:#fff;text-decoration:none;border-radius:999px}
+/* ==========================================================
+   ANGÉLIQUE RUELLE
+   STYLE V2
+========================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Source+Sans+3:wght@300;400;500;600&display=swap');
+
+/* ==========================================================
+   VARIABLES
+========================================================== */
+
+:root{
+
+    --blanc:#FAF8F4;
+
+    --blanc-pur:#FFFFFF;
+
+    --vert:#A7B69C;
+
+    --vert-fonce:#7C8E73;
+
+    --terracotta:#C98E7A;
+
+    --beige:#ECE5DC;
+
+    --texte:#4B4743;
+
+    --gris:#7E7872;
+
+    --ombre:0 20px 40px rgba(0,0,0,.08);
+
+    --radius:22px;
+
+}
+
+/* ==========================================================
+   RESET
+========================================================== */
+
+*{
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+}
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+body{
+
+    font-family:'Source Sans 3',sans-serif;
+
+    background:var(--blanc);
+
+    color:var(--texte);
+
+    line-height:1.8;
+
+    overflow-x:hidden;
+
+}
+
+img{
+
+    max-width:100%;
+
+    display:block;
+
+}
+
+a{
+
+    text-decoration:none;
+
+    color:inherit;
+
+}
+
+.container{
+
+    width:min(1200px,92%);
+
+    margin:auto;
+
+}
+
+/* ==========================================================
+   TITRES
+========================================================== */
+
+h1,
+h2,
+h3{
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-weight:600;
+
+    color:var(--texte);
+
+}
+
+h1{
+
+    font-size:clamp(3rem,6vw,5rem);
+
+    line-height:1.1;
+
+}
+
+h2{
+
+    font-size:clamp(2.2rem,4vw,3.5rem);
+
+    margin-bottom:20px;
+
+}
+
+h3{
+
+    font-size:1.5rem;
+
+}
+
+.section-tag{
+
+    display:inline-block;
+
+    color:var(--terracotta);
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+
+    font-size:.85rem;
+
+    margin-bottom:18px;
+
+}
+
+.section-intro{
+
+    max-width:720px;
+
+    margin:auto;
+
+    color:var(--gris);
+
+    font-size:1.15rem;
+
+}
+
+/* ==========================================================
+   BOUTONS
+========================================================== */
+
+.btn-principal{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:16px 34px;
+
+    border-radius:999px;
+
+    background:var(--vert);
+
+    color:white;
+
+    transition:.35s;
+
+    font-weight:600;
+
+    box-shadow:var(--ombre);
+
+}
+
+.btn-principal:hover{
+
+    background:var(--vert-fonce);
+
+    transform:translateY(-3px);
+
+}
+
+.btn-secondaire{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:16px 34px;
+
+    border-radius:999px;
+
+    border:1px solid rgba(0,0,0,.08);
+
+    background:white;
+
+    transition:.35s;
+
+}
+
+.btn-secondaire:hover{
+
+    background:var(--blanc);
+
+}
+
+/* ==========================================================
+   NAVIGATION
+========================================================== */
+
+.navbar{
+
+    position:absolute;
+
+    left:0;
+
+    top:0;
+
+    width:100%;
+
+    padding:28px 5%;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    z-index:100;
+
+}
+
+.logo img{
+
+    height:70px;
+
+}
+
+.navbar ul{
+
+    display:flex;
+
+    gap:34px;
+
+    list-style:none;
+
+}
+
+.navbar li{
+
+    font-size:1rem;
+
+}
+
+.navbar a{
+
+    transition:.3s;
+
+}
+
+.navbar a:hover{
+
+    color:var(--terracotta);
+
+}
+
+.btn-rdv{
+
+    padding:14px 28px;
+
+    border-radius:999px;
+
+    background:var(--vert);
+
+    color:white;
+
+}
+
+/* ==========================================================
+   HERO
+========================================================== */
+
+.hero{
+
+    position:relative;
+
+    min-height:100vh;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    background:
+    linear-gradient(rgba(250,248,244,.60),
+    rgba(250,248,244,.72)),
+    url(images/hero.jpg);
+
+    background-size:cover;
+
+    background-position:center;
+
+}
+
+.hero-content{
+
+    text-align:center;
+
+    width:min(900px,90%);
+
+}
+
+.subtitle{
+
+    text-transform:uppercase;
+
+    letter-spacing:4px;
+
+    color:var(--terracotta);
+
+    margin-bottom:22px;
+
+}
+
+.hero p{
+
+    max-width:760px;
+
+    margin:30px auto;
+
+    font-size:1.2rem;
+
+    color:var(--gris);
+
+}
+
+.hero-buttons{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:18px;
+
+    flex-wrap:wrap;
+
+    margin-top:40px;
+
+}
